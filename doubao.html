@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知界智能 COGIX - 全域工业传感与嵌入式AI服务商</title>
+    <style>
+        /* 固定品牌色规范 */
+        :root {
+            --red: #C8102E;
+            --blue: #1976D2;
+            --dark-bg: #1A1A1A;
+            --white: #ffffff;
+            --gray: #f5f5f5;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Microsoft Yahei", sans-serif;}
+        body {background: var(--gray); color: #333; line-height: 1.6;}
+        /* 全局克制动效：仅滚动淡入、hover */
+        .fade-in {opacity: 0; transform: translateY(20px); transition: all 0.6s ease;}
+        .fade-in.active {opacity: 1; transform: translateY(0);}
+        button:hover {transform: translateY(-2px); transition: 0.2s;}
+        /* 导航栏 */
+        header {display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); position: sticky; top:0; z-index:99;}
+        .logo {font-size: 24px; font-weight: bold; color: var(--dark-bg);}
+        .logo span {color: var(--red);}
+        nav a {margin:0 16px; text-decoration: none; color:#333; font-size:16px;}
+        .btn-red {background: var(--red); color:white; border:none; padding:10px 24px; border-radius:6px; cursor:pointer;}
+        .btn-blue {background: var(--blue); color:white; border:none; padding:10px 24px; border-radius:6px; cursor:pointer;}
+        /* 首屏Hero */
+        .hero {padding: 120px 60px; background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('industrial-bg.jpg') center/cover; color: var(--white);}
+        .hero h1 {font-size: 42px; margin-bottom:16px;}
+        .hero p {font-size:18px; margin-bottom:32px; max-width:700px;}
+        /* 通用区块 */
+        section {padding: 80px 60px;}
+        .section-title {text-align:center; font-size:32px; margin-bottom:60px;}
+        /* 四行业方案网格 */
+        .grid-2 {display:grid; grid-template-columns: 1fr 1fr; gap:30px; max-width:1400px; margin:0 auto;}
+        .card {background:white; border-radius:12px; padding:30px; box-shadow:0 4px 12px #00000010;}
+        /* 产品交替板块 */
+        .product-item {display:flex; gap:40px; align-items:center; max-width:1400px; margin:40px auto;}
+        /* 深色技术区 */
+        .tech-dark {background: var(--dark-bg); color:white;}
+        /* 页脚 */
+        footer {background:#0f0f0f; color:#ccc; padding:60px; margin-top:40px;}
+    </style>
+</head>
+<body>
+<!-- 1.顶部导航 -->
+<header class="fade-in">
+    <div class="logo">知界智能 <span>COGIX</span></div>
+    <nav>
+        <a href="#solution">解决方案</a>
+        <a href="#product">产品中心</a>
+        <a href="#about">关于我们</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+    <div>
+        <a href="#login" style="margin-right:16px; text-decoration:none; color:#333;">客户登录</a>
+        <button class="btn-red">立即询价</button>
+    </div>
+</header>
+
+<!-- 2.首屏Hero -->
+<section class="hero fade-in">
+    <h1>全域工业传感与嵌入式AI服务商</h1>
+    <p>风电/通讯铁塔/公路气象/边境安防 极端环境智能监测系统</p>
+    <button class="btn-blue" style="margin-right:20px;">查看产品</button>
+    <button class="btn-red">定制方案</button>
+</section>
+
+<!-- 3.四大行业解决方案 -->
+<section id="solution" class="fade-in">
+    <h2 class="section-title">四大行业解决方案</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>风电全域监测</h3>
+            <p>风机塔筒形变、环境温湿度、风沙盐雾全天候实时采集预警</p>
+        </div>
+        <div class="card">
+            <h3>通讯铁塔远程运维</h3>
+            <p>塔体倾斜、外力碰撞、极端高低温7×24小时在线监测</p>
+        </div>
+        <div class="card">
+            <h3>公路气象与团雾预警</h3>
+            <p>路面结冰、能见度、风力全域传感，高速道路安全管控</p>
+        </div>
+        <div class="card">
+            <h3>电网边境安防管控</h3>
+            <p>输电线路、边境站点环境与入侵监测，适配海外基建项目</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4.核心产品中心 -->
+<section id="product" class="fade-in">
+    <h2 class="section-title">核心产品中心</h2>
+    <div class="product-item">
+        <div>
+            <h3>奥擎®遥测系统</h3>
+            <p>户外极端环境专用传感硬件，支持-40℃~60℃宽温、抗盐雾风沙，适配各类野外基建场景</p>
+        </div>
+        <div style="width:50%; height:240px; background:#eee; border-radius:12px;"></div>
+    </div>
+    <div class="product-item" style="flex-direction:row-reverse;">
+        <div>
+            <h3>赛络云®平台</h3>
+            <p>大数据全域智控后台，内置客户独立登录权限，可在线查看项目监测数据、导出运维报表</p>
+        </div>
+        <div style="width:50%; height:240px; background:#eee; border-radius:12px;"></div>
+    </div>
+    <div class="product-item">
+        <div>
+            <h3>嵌入式AI算法</h3>
+            <p>设备底层深度数据穿透分析，支持离线本地运算，恶劣工况自动识别异常风险</p>
+        </div>
+        <div style="width:50%; height:240px; background:#eee; border-radius:12px;"></div>
+    </div>
+</section>
+
+<!-- 5.核心技术壁垒区 -->
+<section class="tech-dark fade-in">
+    <h2 class="section-title">核心技术优势</h2>
+    <div class="grid-2" style="color:#fff;">
+        <div class="card" style="background:#272727;">
+            <h3>超宽温硬件适配</h3>
+            <p>-40℃~60℃稳定持续工作，适配全球极寒、高温户外场景</p>
+        </div>
+        <div class="card" style="background:#272727;">
+            <h3>盐雾风沙防护工艺</h3>
+            <p>工业级密封结构，沿海、荒漠恶劣环境长期稳定运行</p>
+        </div>
+        <div class="card" style="background:#272727;">
+            <h3>全域多维数据采集</h3>
+            <p>温湿度、形变、风力、能见度多维度同步传感采集</p>
+        </div>
+        <div class="card" style="background:#272727;">
+            <h3>本地离线AI运算</h3>
+            <p>无外网环境下独立完成数据分析、风险预警，数据本地留存</p>
+        </div>
+    </div>
+</section>
+
+<!-- 6.品牌故事·钢铁蝴蝶 -->
+<section id="about" class="fade-in">
+    <h2 class="section-title">品牌故事 · 钢铁蝴蝶</h2>
+    <div style="max-width:1000px; margin:0 auto; text-align:center; font-size:18px;">
+        <p style="margin-bottom:20px;">钢铁，代表我们深耕工业硬件的硬核制造实力，耐受全球各类极端户外工况；</p>
+        <p>蝴蝶效应，代表微小传感数据即可驱动全域基建智能管控。</p>
+        <p style="margin-top:20px;">品牌适配中东、东南亚、非洲海外市场，无地域文化负面意象，支撑海外子公司长期出海布局。</p>
+    </div>
+</section>
+
+<!-- 7.全球化海外布局 -->
+<section class="fade-in" style="background:#eee;">
+    <h2 class="section-title">全球化业务布局</h2>
+    <div class="grid-2" style="max-width:1200px; margin:0 auto;">
+        <div class="card">
+            <h3>中东区域</h3>
+            <p>中东风电、光伏基建全域监测项目落地，适配沙漠高温风沙环境</p>
+        </div>
+        <div class="card">
+            <h3>东南亚区域</h3>
+            <p>高速公路气象监测、通讯铁塔运维系统，适配高湿度多雨环境</p>
+        </div>
+        <div class="card">
+            <h3>非洲区域</h3>
+            <p>边境安防、输电线路监测设备，适配偏远无外网离线作业场景</p>
+        </div>
+        <div class="card">
+            <h3>国内政企市场</h3>
+            <p>全国风电、交通、电网工程长期稳定合作，完善本地化售后体系</p>
+        </div>
+    </div>
+</section>
+
+<!-- 8.合作客户信任墙 -->
+<section class="fade-in">
+    <h2 class="section-title">合作客户</h2>
+    <div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center; max-width:1400px; margin:0 auto;">
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+        <div style="width:160px; height:80px; background:#eee; border-radius:8px;"></div>
+    </div>
+</section>
+
+<!-- 9.客户咨询CTA表单 -->
+<section id="contact" class="fade-in" style="background:var(--blue); color:white;">
+    <h2 class="section-title">立即获取定制方案</h2>
+    <div style="max-width:700px; margin:0 auto;">
+        <div style="margin-bottom:20px;">
+            <label>公司名称</label>
+            <input style="width:100%; padding:12px; border-radius:6px; border:none; margin-top:8px;">
+        </div>
+        <div style="margin-bottom:20px;">
+            <label>联系人</label>
+            <input style="width:100%; padding:12px; border-radius:6px; border:none; margin-top:8px;">
+        </div>
+        <div style="margin-bottom:20px;">
+            <label>行业与项目需求</label>
+            <textarea rows="4" style="width:100%; padding:12px; border-radius:6px; border:none; margin-top:8px;"></textarea>
+        </div>
+        <button class="btn-red" style="width:100%; padding:14px; font-size:18px;">提交咨询</button>
+    </div>
+</section>
+
+<!-- 10.页脚Footer -->
+<footer class="fade-in">
+    <div style="display:grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap:40px; max-width:1400px; margin:0 auto;">
+        <div>
+            <h3 style="color:white; margin-bottom:16px;">知界智能 COGIX</h3>
+            <p>北京鹰卫士信息技术有限公司，专注户外极端环境传感硬件与嵌入式AI全域智控系统，服务国内外基建政企客户。</p>
+        </div>
+        <div>
+            <h4 style="color:white; margin-bottom:16px;">产品中心</h4>
+            <p>奥擎®遥测系统</p>
+            <p>赛络云®管理平台</p>
+            <p>嵌入式AI算法</p>
+        </div>
+        <div>
+            <h4 style="color:white; margin-bottom:16px;">行业方案</h4>
+            <p>风电监测</p>
+            <p>通讯铁塔运维</p>
+            <p>公路气象预警</p>
+            <p>电网边境安防</p>
+        </div>
+        <div>
+            <h4 style="color:white; margin-bottom:16px;">联系我们</h4>
+            <p>联系电话：XXX-XXXXXXX</p>
+            <p>企业邮箱：contact@cogix.com</p>
+            <p>北京办公地址：朝阳区国航世纪大厦</p>
+            <p style="margin-top:12px;">ICP备案号：京ICP备XXXXXX号</p>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:60px; padding-top:20px; border-top:#333 solid 1px;">
+        ©2026 北京鹰卫士信息技术有限公司 版权所有
+    </div>
+</footer>
+
+<script>
+// 仅保留克制滚动淡入动效，移除全部视差、飞动动画
+const fadeElements = document.querySelectorAll('.fade-in');
+function checkFade() {
+    fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100) {
+            el.classList.add('active');
+        }
+    })
+}
+window.addEventListener('scroll', checkFade);
+window.addEventListener('load', checkFade);
+</script>
+</body>
+</html>
